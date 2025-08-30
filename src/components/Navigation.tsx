@@ -17,7 +17,6 @@ export function Navigation() {
             <a
               className={`inline-block focus:outline-hidden text-black hover:text-gray-600 focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300 hover:border-b-2 hover:border-amber-400`}
               href={item.href}
-              aria-current={item.isActive ? "page" : undefined}
             >
               {item.label}
             </a>
