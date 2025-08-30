@@ -10,10 +10,10 @@ interface Category {
 
 export interface Product {
   name: string;
-  sizes: {
+  prices: {
     small: number;
-    medium: number;
-    large: number;
+    medium?: number;
+    large?: number;
   };
   image: string;
 }
@@ -24,7 +24,7 @@ const categories = [
     products: [
       {
         name: "Coffee",
-        sizes: {
+        prices: {
           small: 3.0,
           medium: 3.5,
           large: 4.0,
@@ -34,7 +34,7 @@ const categories = [
       },
       {
         name: "Americano",
-        sizes: {
+        prices: {
           small: 3.75,
           medium: 4.25,
           large: 4.75,
@@ -44,7 +44,7 @@ const categories = [
       },
       {
         name: "Latte",
-        sizes: {
+        prices: {
           small: 4.5,
           medium: 5.0,
           large: 5.25,
@@ -54,7 +54,7 @@ const categories = [
       },
       {
         name: "Macchiato",
-        sizes: {
+        prices: {
           small: 5.0,
           medium: 5.5,
           large: 6.0,
@@ -69,13 +69,39 @@ const categories = [
     products: [
       {
         name: "Cafe con Leche",
-        sizes: {
+        prices: {
           small: 4.5,
           medium: 5.25,
           large: 6.0,
         },
         image:
-          "https://images.pexels.com/photos/4264049/pexels-photo-4264049.jpeg",
+          "https://images.pexels.com/photos/15268786/pexels-photo-15268786.jpeg",
+      },
+      {
+        name: "Cortado",
+        prices: {
+          small: 4.25,
+          medium: 5.0,
+          large: 5.75,
+        },
+        image:
+          "https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg",
+      },
+      {
+        name: "Espresso Shot",
+        prices: {
+          small: 1.5,
+        },
+        image:
+          "https://images.unsplash.com/photo-1705952285570-113e76f63fb0?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0",
+      },
+      {
+        name: "Cappuccino",
+        prices: {
+          small: 4.25,
+        },
+        image:
+          "https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=635&auto=format&fit=crop&ixlib=rb-4.1.0",
       },
     ],
   },
@@ -100,7 +126,7 @@ export function ProductGrid() {
       id="menu"
     >
       <div className="mx-auto">
-        <h1 className="font-medium text-black text-3xl sm:text-4xl dark:text-white border-b-1 border-amber-600/15 pb-2">
+        <h1 className="font-medium text-black text-3xl sm:text-4xl dark:text-white pb-2">
           Our menu
         </h1>
       </div>

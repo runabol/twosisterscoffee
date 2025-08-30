@@ -2,7 +2,7 @@ import { Logo } from "./Logo";
 
 export function Footer() {
   const footerLinks = [
-    { href: "/", label: "Menu" },
+    { href: "/#menu", label: "Menu" },
     { href: "/#about-us", label: "About" },
     { href: "/#contact", label: "Contact" },
   ];
