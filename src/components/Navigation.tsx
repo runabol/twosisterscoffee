@@ -1,18 +1,17 @@
 export function Navigation() {
   const menuItems = [
-    { href: "/", label: "Home", isActive: true },
-    { href: "/listings", label: "Listings" },
-    { href: "/product", label: "Product" },
-    { href: "/checkout", label: "Checkout" },
+    { href: "/", label: "Menu", isActive: true },
+    { href: "/#about-us", label: "About" },
+    { href: "/events", label: "Events" },
   ];
 
   return (
     <div
       id="hs-pro-hcail"
-      className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block lg:w-auto lg:basis-auto lg:order-2 lg:col-span-6"
+      className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow lg:block lg:w-auto lg:basis-auto lg:order-2 lg:col-span-9"
       aria-labelledby="hs-pro-hcail-collapse"
     >
-      <div className="flex flex-col gap-y-4 gap-x-0 mt-5 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
+      <div className="flex flex-col gap-y-4 gap-x-0 mt-5 lg:flex-row lg:justify-end  lg:items-center lg:gap-y-0 lg:gap-x-7 lg:mt-0">
         {menuItems.map((item) => (
           <div key={item.href}>
             <a
