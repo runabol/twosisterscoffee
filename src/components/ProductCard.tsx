@@ -9,17 +9,15 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group flex flex-col">
       <div className="relative">
-        <a href="#">
-          <div className="aspect-4/4 overflow-hidden rounded-2xl">
-            <Image
-              className="size-full object-cover rounded-2xl"
-              src={product.image}
-              alt={`${product.name} Coffee`}
-              width={500}
-              height={500}
-            />
-          </div>
-        </a>
+        <div className="aspect-4/4 overflow-hidden rounded-2xl">
+          <Image
+            className="size-full object-cover rounded-2xl"
+            src={product.image}
+            alt={`${product.name} Coffee`}
+            width={500}
+            height={500}
+          />
+        </div>
         <div className="pt-4 mb-4">
           <h3 className="font-medium md:text-lg text-black dark:text-white">
             {product.name}
