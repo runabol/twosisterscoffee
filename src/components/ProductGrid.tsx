@@ -103,6 +103,14 @@ const categories = [
         image:
           "https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=635&auto=format&fit=crop&ixlib=rb-4.1.0",
       },
+      {
+        name: "Colada (cuban coffee)",
+        prices: {
+          small: 3.0,
+        },
+        image:
+          "https://images.unsplash.com/photo-1614227373539-d763a95a31a3?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0",
+      },
     ],
   },
   {
