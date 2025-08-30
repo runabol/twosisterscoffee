@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://two-sisters-coffee.com"),
-  title: "Two Sisters Coffee",
+  title: "Two Sisters Coffee Co.",
   description:
     "Premium coffee shop with a family tradition of rich, aromatic coffee",
   keywords: ["coffee", "premium coffee", "artisan coffee", "coffee shop"],

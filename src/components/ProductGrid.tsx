@@ -4,84 +4,62 @@ import { ProductCard } from "./ProductCard";
 const products = [
   {
     id: 1,
-    name: "Beija Flor",
+    name: "Cappuccino",
     price: 5.5,
-    image: "https://preline.co/assets/img/pro/coffee-shop/img1.png",
-    tastingNotes: "Hazelnut, Grape, Milk Chocolate",
-    origin: "Brazil",
-    region: "San Paulo",
+    image:
+      "https://images.unsplash.com/photo-1473923377535-0002805f57e8?q=80&w=1008&auto=format&fit=crop&ixlib=rb-4.1.0",
   },
   {
     id: 2,
     name: "El Mirador",
     price: 7.5,
     image: "https://preline.co/assets/img/pro/coffee-shop/img2.png",
-    tastingNotes: "Red Apple, Caramel, Almond",
-    origin: "Colombia",
-    region: "Manizales",
   },
   {
     id: 3,
     name: "Pedra Branca",
     price: 2.1,
     image: "https://preline.co/assets/img/pro/coffee-shop/img5.png",
-    tastingNotes: "Red Apple, Walnut, Milk Chocolate",
-    origin: "Brazil",
-    region: "San Paulo",
   },
   {
     id: 4,
     name: "Beija Flor",
     price: 12.5,
     image: "https://preline.co/assets/img/pro/coffee-shop/img7.png",
-    tastingNotes: "Hazelnut, Grape, Milk Chocolate",
-    origin: "Brazil",
-    region: "San Paulo",
   },
   {
     id: 5,
     name: "Beija Flor",
     price: 7.5,
     image: "https://preline.co/assets/img/pro/coffee-shop/img3.png",
-    tastingNotes: "Apricot, Cashew, Praline",
-    origin: "Brazil",
-    region: "San Paulo",
   },
   {
     id: 6,
     name: "El Mirador",
     price: 7.5,
     image: "https://preline.co/assets/img/pro/coffee-shop/img2.png",
-    tastingNotes: "Red Apple, Caramel, Almond",
-    origin: "Colombia",
-    region: "Manizales",
   },
 ];
 
 const categories = [
   {
     id: 1,
-    name: "Cappuccino",
+    name: "Classics",
     active: true,
   },
   {
     id: 2,
-    name: "Espresso",
+    name: "Specialties",
     active: false,
   },
   {
     id: 3,
-    name: "Latte",
+    name: "Non-Coffees",
     active: false,
   },
   {
     id: 4,
-    name: "Flat White",
-    active: false,
-  },
-  {
-    id: 5,
-    name: "Americano",
+    name: "Baked Goods",
     active: false,
   },
 ];
@@ -89,22 +67,22 @@ const categories = [
 export function ProductGrid() {
   return (
     <div
-      className="max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-24 mx-auto"
+      className="max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16 mx-auto"
       id="menu"
     >
       <div className="mx-auto">
-        <h1 className="font-medium text-black text-3xl sm:text-4xl dark:text-white">
+        <h1 className="font-medium text-black text-3xl sm:text-4xl dark:text-white border-b-1 border-amber-600/15 pb-2">
           Our menu
         </h1>
       </div>
 
-      <div className="flex gap-4 mt-4 mb-10">
+      <div className="flex gap-4 mt-5 mb-10">
         {categories.map((category) => (
           <button
             key={category.id}
             className={cn(
-              "text-sm text-gray-700",
-              category.active && "text-amber-500"
+              "text-sm text-gray-800 cursor-pointer outline-none",
+              category.active && "text-amber-600"
             )}
           >
             {category.name}
