@@ -1,8 +1,8 @@
 export function Navigation() {
   const menuItems = [
-    { href: "/", label: "Menu", isActive: true },
+    { href: "/#menu", label: "Menu" },
     { href: "/#about-us", label: "About" },
-    { href: "/events", label: "Events" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   return (
@@ -15,11 +15,7 @@ export function Navigation() {
         {menuItems.map((item) => (
           <div key={item.href}>
             <a
-              className={`inline-block focus:outline-hidden ${
-                item.isActive
-                  ? "relative text-black before:absolute before:bottom-0.5 before:start-0 before:-z-1 before:w-full before:h-1 before:bg-yellow-400 dark:text-white"
-                  : "text-black hover:text-gray-600 focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-              }`}
+              className={`inline-block focus:outline-hidden text-black hover:text-gray-600 focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300 hover:border-b-2 hover:border-amber-400`}
               href={item.href}
               aria-current={item.isActive ? "page" : undefined}
             >

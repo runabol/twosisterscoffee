@@ -2,9 +2,9 @@ import { Logo } from "./Logo";
 
 export function Footer() {
   const footerLinks = [
-    { href: "/about", label: "About" },
-    { href: "/services", label: "Services" },
-    { href: "/blog", label: "Blog" },
+    { href: "/", label: "Menu" },
+    { href: "/#about-us", label: "About" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   const socialLinks = [
