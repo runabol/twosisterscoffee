@@ -4,9 +4,9 @@ export function Contact() {
       id="contact"
       className="max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-24 mx-auto"
     >
-      <div className="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
+      <div className="mb-6 sm:mb-10 max-w-2xl">
         <h2 className="font-medium text-black text-2xl sm:text-4xl dark:text-white">
-          Contacts
+          Contact us
         </h2>
       </div>
 
@@ -14,7 +14,7 @@ export function Contact() {
         <div className="aspect-w-16 aspect-h-6 lg:aspect-h-14 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
           <img
             className="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
-            src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.pexels.com/photos/606545/pexels-photo-606545.jpeg"
             alt="Coffee shop interior"
           />
         </div>

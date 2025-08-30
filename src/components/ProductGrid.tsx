@@ -4,40 +4,32 @@ import { ProductCard } from "./ProductCard";
 const products = [
   {
     id: 1,
-    name: "Cappuccino",
-    price: 5.5,
-    image:
-      "https://images.unsplash.com/photo-1473923377535-0002805f57e8?q=80&w=1008&auto=format&fit=crop&ixlib=rb-4.1.0",
+    name: "Coffee",
+    priceFrom: 3.0,
+    priceTo: 4.0,
+    image: "https://images.pexels.com/photos/4264049/pexels-photo-4264049.jpeg",
   },
   {
     id: 2,
-    name: "El Mirador",
-    price: 7.5,
-    image: "https://preline.co/assets/img/pro/coffee-shop/img2.png",
+    name: "Americano",
+    priceFrom: 3.75,
+    priceTo: 4.75,
+    image: "https://images.pexels.com/photos/3704460/pexels-photo-3704460.jpeg",
   },
   {
     id: 3,
-    name: "Pedra Branca",
-    price: 2.1,
-    image: "https://preline.co/assets/img/pro/coffee-shop/img5.png",
+    name: "Latte",
+    priceFrom: 4.5,
+    priceTo: 5.25,
+    image: "https://images.pexels.com/photos/302904/pexels-photo-302904.jpeg",
   },
   {
     id: 4,
-    name: "Beija Flor",
-    price: 12.5,
-    image: "https://preline.co/assets/img/pro/coffee-shop/img7.png",
-  },
-  {
-    id: 5,
-    name: "Beija Flor",
-    price: 7.5,
-    image: "https://preline.co/assets/img/pro/coffee-shop/img3.png",
-  },
-  {
-    id: 6,
-    name: "El Mirador",
-    price: 7.5,
-    image: "https://preline.co/assets/img/pro/coffee-shop/img2.png",
+    name: "Macchiato",
+    priceFrom: 5.0,
+    priceTo: 6.0,
+    image:
+      "https://images.pexels.com/photos/18424335/pexels-photo-18424335.jpeg",
   },
 ];
 

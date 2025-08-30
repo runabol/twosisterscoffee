@@ -1,7 +1,10 @@
 export function AboutUs() {
   return (
-    <div id="about-us" className="py-10 md:py-16 lg:py-20 bg-orange-100">
+    <div id="about-us" className="py-10 bg-amber-100 sm:rounded-2xl">
       <div className="px-4 sm:px-6 lg:px-8">
+        <h2 className="font-medium pb-6 text-black text-3xl sm:text-4xl dark:text-white border-b-1 border-amber-600/15">
+          About us
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 md:items-center">
           <div className="relative h-80 md:h-150 bg-gray-100 rounded-2xl dark:bg-neutral-800">
             <img
@@ -13,8 +16,8 @@ export function AboutUs() {
 
           <div className="pt-10 md:p-10">
             <blockquote className="max-w-4xl mx-auto">
-              <p className="mb-6 md:text-lg">
-                A Family Tradition of Rich, Aromatic Coffee
+              <p className="mb-6 text-xl sm:text-2xl lg:text-3xl">
+                A family tradition of rich, aromatic coffee
               </p>
               <p className="text-xl sm:text-2xl lg:text-3xl lg:leading-normal text-gray-800 dark:text-neutral-200">
                 Coffee has the power to connect generations – whether it&apos;s

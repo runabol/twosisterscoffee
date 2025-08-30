@@ -1,7 +1,10 @@
+import Image from "next/image";
+
 interface Product {
   id: number;
   name: string;
-  price: number;
+  priceFrom: number;
+  priceTo: number;
   image: string;
 }
 
@@ -14,10 +17,12 @@ export function ProductCard({ product }: ProductCardProps) {
     <div className="group flex flex-col">
       <div className="relative">
         <div className="aspect-4/4 overflow-hidden rounded-2xl">
-          <img
+          <Image
             className="size-full object-cover rounded-2xl"
             src={product.image}
             alt={`${product.name} Coffee`}
+            width={500}
+            height={500}
           />
         </div>
         <div className="pt-4 mb-4">
@@ -27,8 +32,14 @@ export function ProductCard({ product }: ProductCardProps) {
           <p className="mt-2 text-sm text-gray-700 dark:text-white">
             3 sizes available
           </p>
-          <p className="mt-2 font-semibold text-black dark:text-white">
-            ${product.price.toFixed(2)}
+          <p className="mt-2 font-semibold text-black dark:text-white flex items-center gap-x-1">
+            <span className="text-amber-600 text-md">
+              ${product.priceFrom.toFixed(2)}
+            </span>
+            <span className="h-0.5 w-2 bg-gray-400" />
+            <span className="text-amber-600 text-md">
+              ${product.priceTo.toFixed(2)}
+            </span>
           </p>
         </div>
         <a className="after:absolute after:inset-0 after:z-1" href="#" />
