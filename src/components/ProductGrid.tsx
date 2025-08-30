@@ -105,10 +105,43 @@ const categories = [
       },
     ],
   },
-  // {
-  //   name: "Non-Coffees",
-  //   active: false,
-  // },
+  {
+    name: "Non-Coffee",
+    products: [
+      {
+        name: "Hot Tea",
+        prices: {
+          small: 3.5,
+        },
+        image:
+          "https://images.pexels.com/photos/1629185/pexels-photo-1629185.jpeg",
+      },
+      {
+        name: "Hot Chocolate",
+        prices: {
+          small: 4.5,
+        },
+        image:
+          "https://images.unsplash.com/photo-1517578239113-b03992dcdd25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0",
+      },
+      {
+        name: "Smoothie",
+        prices: {
+          small: 6.0,
+        },
+        image:
+          "https://images.pexels.com/photos/990439/pexels-photo-990439.jpeg",
+      },
+      {
+        name: "Frappe",
+        prices: {
+          small: 6.0,
+        },
+        image:
+          "https://images.pexels.com/photos/214333/pexels-photo-214333.jpeg",
+      },
+    ],
+  },
   // {
   //   name: "Baked Goods",
   //   active: false,
