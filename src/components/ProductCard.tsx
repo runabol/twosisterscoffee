@@ -1,15 +1,5 @@
 import Image from "next/image";
-
-interface Product {
-  id: number;
-  name: string;
-  sizes?: {
-    small: number;
-    medium: number;
-    large: number;
-  };
-  image: string;
-}
+import { Product } from "./ProductGrid";
 
 interface ProductCardProps {
   product: Product;
@@ -45,7 +35,6 @@ export function ProductCard({ product }: ProductCardProps) {
             </span>
           </p>
         </div>
-        <a className="after:absolute after:inset-0 after:z-1" href="#" />
       </div>
 
       <div className="mt-auto">
