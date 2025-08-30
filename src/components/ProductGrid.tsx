@@ -142,10 +142,59 @@ const categories = [
       },
     ],
   },
-  // {
-  //   name: "Baked Goods",
-  //   active: false,
-  // },
+  {
+    name: "Baked Goods",
+    products: [
+      {
+        name: "Cinammon Roll",
+        prices: {
+          small: 4.0,
+        },
+        image:
+          "https://images.unsplash.com/photo-1593872571314-4a735d4b27b0?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0",
+      },
+      {
+        name: "Muffin",
+        prices: {
+          small: 4.0,
+        },
+        image:
+          "https://images.pexels.com/photos/1657343/pexels-photo-1657343.jpeg",
+      },
+      {
+        name: "Bagel",
+        prices: {
+          small: 3.0,
+        },
+        image:
+          "https://images.unsplash.com/photo-1585841393012-e4ded4a6e2d0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0",
+      },
+      {
+        name: "Pastelito",
+        prices: {
+          small: 3.0,
+        },
+        image:
+          "https://images.unsplash.com/photo-1622941367239-8acd68fa946d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0",
+      },
+      {
+        name: "Empanada",
+        prices: {
+          small: 4.0,
+        },
+        image:
+          "https://images.unsplash.com/photo-1608039783021-6116a558f0c5?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0",
+      },
+      {
+        name: "Croqueta",
+        prices: {
+          small: 2.0,
+        },
+        image:
+          "https://images.unsplash.com/photo-1683694062041-cc62c5390b13?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0",
+      },
+    ],
+  },
 ];
 
 export function ProductGrid() {
