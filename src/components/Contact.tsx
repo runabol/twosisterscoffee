@@ -21,9 +21,9 @@ export function Contact() {
           />
         </div>
 
-        <div className="space-y-8 lg:space-y-16">
+        <div className="space-y-8 lg:space-y-8">
           <div>
-            <h3 className="mb-5 font-semibold text-black dark:text-white">
+            <h3 className="mb-2 font-semibold text-black dark:text-white">
               Our address
             </h3>
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
@@ -49,7 +49,7 @@ export function Contact() {
             </div>
           </div>
           <div>
-            <h3 className="mb-5 font-semibold text-black dark:text-white">
+            <h3 className="mb-2 font-semibold text-black dark:text-white">
               Hours
             </h3>
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
