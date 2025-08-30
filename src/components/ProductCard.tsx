@@ -3,8 +3,11 @@ import Image from "next/image";
 interface Product {
   id: number;
   name: string;
-  priceFrom: number;
-  priceTo: number;
+  sizes?: {
+    small: number;
+    medium: number;
+    large: number;
+  };
   image: string;
 }
 
@@ -34,11 +37,11 @@ export function ProductCard({ product }: ProductCardProps) {
           </p>
           <p className="mt-2 font-semibold text-black dark:text-white flex items-center gap-x-1">
             <span className="text-amber-600 text-md">
-              ${product.priceFrom.toFixed(2)}
+              ${product.sizes?.small.toFixed(2)}
             </span>
             <span className="h-0.5 w-2 bg-gray-400" />
             <span className="text-amber-600 text-md">
-              ${product.priceTo.toFixed(2)}
+              ${product.sizes?.large.toFixed(2)}
             </span>
           </p>
         </div>

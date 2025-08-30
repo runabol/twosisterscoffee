@@ -5,29 +5,41 @@ const products = [
   {
     id: 1,
     name: "Coffee",
-    priceFrom: 3.0,
-    priceTo: 4.0,
+    sizes: {
+      small: 3.0,
+      medium: 3.5,
+      large: 4.0,
+    },
     image: "https://images.pexels.com/photos/4264049/pexels-photo-4264049.jpeg",
   },
   {
     id: 2,
     name: "Americano",
-    priceFrom: 3.75,
-    priceTo: 4.75,
+    sizes: {
+      small: 3.75,
+      medium: 4.25,
+      large: 4.75,
+    },
     image: "https://images.pexels.com/photos/3704460/pexels-photo-3704460.jpeg",
   },
   {
     id: 3,
     name: "Latte",
-    priceFrom: 4.5,
-    priceTo: 5.25,
+    sizes: {
+      small: 4.5,
+      medium: 5.0,
+      large: 5.25,
+    },
     image: "https://images.pexels.com/photos/302904/pexels-photo-302904.jpeg",
   },
   {
     id: 4,
     name: "Macchiato",
-    priceFrom: 5.0,
-    priceTo: 6.0,
+    sizes: {
+      small: 5.0,
+      medium: 5.5,
+      large: 6.0,
+    },
     image:
       "https://images.pexels.com/photos/18424335/pexels-photo-18424335.jpeg",
   },
