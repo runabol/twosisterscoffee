@@ -19,15 +19,13 @@ export function ProductCard({ product }: ProductCardProps) {
           />
         </div>
         <div className="pt-4 mb-4">
-          <h3 className="font-medium md:text-lg text-black dark:text-white">
-            {product.name}
-          </h3>
-          <p className="mt-2 text-sm text-gray-700 dark:text-white">
+          <h3 className="font-medium md:text-lg text-black">{product.name}</h3>
+          <p className="mt-2 text-sm text-gray-700">
             {Object.keys(product.prices).length}{" "}
             {Object.keys(product.prices).length === 1 ? "size" : "sizes"}{" "}
             available
           </p>
-          <p className="mt-2 font-semibold text-black dark:text-white flex items-center gap-x-1">
+          <p className="mt-2 font-semibold text-black flex items-center gap-x-1">
             <span className="text-amber-600 text-md">
               ${product.prices?.small.toFixed(2)}
             </span>

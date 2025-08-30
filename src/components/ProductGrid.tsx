@@ -159,7 +159,7 @@ export function ProductGrid() {
       id="menu"
     >
       <div className="mx-auto">
-        <h1 className="font-medium text-black text-3xl sm:text-4xl dark:text-white pb-2">
+        <h1 className="font-medium text-black text-3xl sm:text-4xl">
           Our menu
         </h1>
       </div>
