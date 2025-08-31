@@ -9,7 +9,7 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group flex flex-col">
       <div className="relative">
-        <div className="aspect-4/4 overflow-hidden rounded-2xl">
+        <div className="aspect-square overflow-hidden rounded-2xl shadow-lg shadow-black/30">
           <Image
             className="size-full object-cover rounded-2xl"
             src={product.image}

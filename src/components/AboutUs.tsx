@@ -1,6 +1,6 @@
 export function AboutUs() {
   return (
-    <div id="about-us" className="py-10 bg-amber-100 sm:rounded-2xl">
+    <div id="about-us" className="py-10 bg-amber-100 xl:rounded-2xl">
       <div className="px-4 sm:px-6 lg:px-8">
         <h2 className="font-medium pb-6 text-black text-3xl sm:text-4xl">
           About us
