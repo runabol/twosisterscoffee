@@ -34,7 +34,7 @@ export default function ProductPage() {
                 key={product.slug}
                 className="flex flex-col lg:flex-row gap-8"
               >
-                <div className="rounded-2xl overflow-hidden shrink-0">
+                <div className="rounded-2xl overflow-hidden shrink-0 shadow-lg shadow-black/30">
                   <Image
                     src={product.image}
                     alt={product.name}
