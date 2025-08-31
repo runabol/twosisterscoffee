@@ -1,8 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { ProductCard } from "./ProductCard";
-import { useState } from "react";
-import { categories, Category } from "@/content/products";
+import { categories } from "@/content/products";
 import { useQueryState } from "nuqs";
 
 export function ProductGrid() {

@@ -6,15 +6,14 @@ import { Header } from "@/components/Header";
 import { categories } from "@/content/products";
 import { ChevronLeftIcon } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 
 export default function ProductPage() {
-  const { slug } = useParams();
+  const params = useParams<{ slug: string }>();
   const router = useRouter();
   const product = categories
     .flatMap((category) => category.products)
-    .find((product) => product.slug === slug);
+    .find((product) => product.slug === params.slug);
   return (
     <>
       <AnnouncementBanner />
