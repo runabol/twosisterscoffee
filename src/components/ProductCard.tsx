@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Product } from "./ProductGrid";
+import { Product } from "@/content/products";
+import Link from "next/link";
 
 interface ProductCardProps {
   product: Product;
@@ -9,15 +10,17 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group flex flex-col">
       <div className="relative">
-        <div className="aspect-square overflow-hidden rounded-2xl shadow-lg shadow-black/30">
-          <Image
-            className="size-full object-cover rounded-2xl"
-            src={product.image}
-            alt={`${product.name} Coffee`}
-            width={500}
-            height={500}
-          />
-        </div>
+        <Link href={`/product/${product.slug}`}>
+          <div className="aspect-square overflow-hidden rounded-2xl shadow-lg shadow-black/30">
+            <Image
+              className="size-full object-cover rounded-2xl"
+              src={product.image}
+              alt={`${product.name}`}
+              width={500}
+              height={500}
+            />
+          </div>
+        </Link>
         <div className="pt-4 mb-4">
           <h3 className="font-medium md:text-lg text-black">{product.name}</h3>
           <p className="mt-2 text-sm text-gray-700">
@@ -40,15 +43,6 @@ export function ProductCard({ product }: ProductCardProps) {
           </p>
         </div>
       </div>
-
-      {/* <div className="mt-auto">
-        <a
-          className="py-2 px-3 w-full inline-flex justify-center items-center gap-x-2 text-sm font-medium text-nowrap rounded-xl border border-transparent bg-amber-300 text-black hover:bg-amber-500 focus:outline-hidden focus:bg-amber-500 transition disabled:opacity-50 disabled:pointer-events-none"
-          href="#"
-        >
-          Details
-        </a>
-      </div> */}
     </div>
   );
 }

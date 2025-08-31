@@ -5,6 +5,7 @@ import { ProductGrid } from "@/components/ProductGrid";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { AboutUs } from "@/components/AboutUs";
+import { Suspense } from "react";
 
 export default function HomePage() {
   return (
@@ -14,7 +15,9 @@ export default function HomePage() {
         <Header />
         <main id="content">
           <Hero />
-          <ProductGrid />
+          <Suspense>
+            <ProductGrid />
+          </Suspense>
           <AboutUs />
           <Contact />
         </main>
