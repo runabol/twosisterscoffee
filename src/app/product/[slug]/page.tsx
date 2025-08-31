@@ -1,3 +1,4 @@
+"use client";
 import { AnnouncementBanner } from "@/components/AnnouncementBanner";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -6,13 +7,11 @@ import { categories } from "@/content/products";
 import { ChevronLeftIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useParams, useRouter } from "next/navigation";
 
-export default async function ProductPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const { slug } = await params;
+export default function ProductPage() {
+  const { slug } = useParams();
+  const router = useRouter();
   const product = categories
     .flatMap((category) => category.products)
     .find((product) => product.slug === slug);
@@ -23,12 +22,12 @@ export default async function ProductPage({
         <Header />
         <main id="content">
           <div className="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
-            <Link
-              href="/#menu"
-              className="text-sm text-gray-500 hover:text-gray-700 flex items-center"
+            <button
+              onClick={() => router.back()}
+              className="text-sm text-amber-600 hover:text-amber-500 flex items-center cursor-pointer"
             >
               <ChevronLeftIcon className="size-4" /> Back to Menu
-            </Link>
+            </button>
           </div>
           <div className="max-w-7xl px-4 sm:px-6 lg:px-8 py-8 mx-auto">
             {product && (

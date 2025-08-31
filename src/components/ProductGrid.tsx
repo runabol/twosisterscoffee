@@ -3,11 +3,10 @@ import { cn } from "@/lib/utils";
 import { ProductCard } from "./ProductCard";
 import { useState } from "react";
 import { categories, Category } from "@/content/products";
+import { useQueryState } from "nuqs";
 
 export function ProductGrid() {
-  const [selectedCategory, setSelectedCategory] = useState<Category>(
-    categories[0]
-  );
+  const [selectedCategory, setSelectedCategory] = useQueryState("category");
 
   return (
     <div
@@ -24,10 +23,11 @@ export function ProductGrid() {
         {categories.map((category) => (
           <button
             key={category.slug}
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => setSelectedCategory(category.slug)}
             className={cn(
-              "text-sm text-gray-800 cursor-pointer outline-none",
-              category === selectedCategory && "text-amber-600"
+              "text-sm text-gray-800 cursor-pointer outline-none hover:text-amber-600",
+              category.slug === (selectedCategory || categories[0].slug) &&
+                "text-amber-600"
             )}
           >
             {category.name}
@@ -36,9 +36,14 @@ export function ProductGrid() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-        {selectedCategory.products.map((product) => (
-          <ProductCard key={product.slug} product={product} />
-        ))}
+        {categories
+          .find(
+            (category) =>
+              category.slug === (selectedCategory || categories[0].slug)
+          )
+          ?.products.map((product) => (
+            <ProductCard key={product.slug} product={product} />
+          ))}
       </div>
     </div>
   );
